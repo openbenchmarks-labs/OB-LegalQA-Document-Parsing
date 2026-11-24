@@ -1,6 +1,6 @@
-# AGENTS.md — OB-LegalQA
+# AGENTS.md — OB-LegalQA-Document-Parsing
 
-Quick navigation guide for coding agents working in `OB-LegalQA`.
+Quick navigation guide for coding agents working in `OB-LegalQA-Document-Parsing`.
 
 ## Structure (Zero Overlap)
 

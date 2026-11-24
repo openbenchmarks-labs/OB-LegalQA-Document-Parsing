@@ -1,4 +1,4 @@
-name: OB-LegalQA
+name: OB-LegalQA-Document-Parsing
 order:
   serves: Teams choosing a document-parsing or vision-model tool for legal redlines and contract QA.
   win: Higher answer accuracy on held-out legal documents under the same grading rules.

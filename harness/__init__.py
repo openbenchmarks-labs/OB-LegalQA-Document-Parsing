@@ -1,1 +1,1 @@
-"""Runs the OB-LegalQA benchmark: parse, ask, judge, report."""
+"""Runs the OB-LegalQA-Document-Parsing benchmark: parse, ask, judge, report."""

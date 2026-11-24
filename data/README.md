@@ -4,7 +4,7 @@ No PDFs or question files are committed to this folder.
 
 ## Public vs. held-out evaluation sets
 
-- **Public split:** Hosted on Hugging Face at [`openbenchmarks/OB-LegalQA`](https://huggingface.co/datasets/openbenchmarks/OB-LegalQA). Run `python -m harness.run init` to download the pinned revision into `.openbench/redline-parsing/dataset/`.
+- **Public split:** Hosted on Hugging Face at [`openbenchmarks/OB-LegalQA-Document-Parsing`](https://huggingface.co/datasets/openbenchmarks/OB-LegalQA-Document-Parsing). Run `python -m harness.run init` to download the pinned revision into `.openbench/redline-parsing/dataset/`.
 
 ## Files and schema
 

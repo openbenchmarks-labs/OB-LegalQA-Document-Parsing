@@ -34,8 +34,8 @@ openbench-document-processing = "harness.run:main"
 
 [project.urls]
 Leaderboard = "https://openbenchmarks.com/document-processing"
-Repository = "https://github.com/openbenchmarks-labs/OB-LegalQA"
-Dataset = "https://huggingface.co/datasets/openbenchmarks/OB-LegalQA"
+Repository = "https://github.com/openbenchmarks-labs/OB-LegalQA-Document-Parsing"
+Dataset = "https://huggingface.co/datasets/openbenchmarks/OB-LegalQA-Document-Parsing"
 
 [tool.hatch.build.targets.wheel]
 packages = ["harness", "judge"]
