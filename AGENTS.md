@@ -1,4 +1,4 @@
-# AGENTS.md — OB-LegalQA-Document-Parsing
+# AGENTS.md — OB-LegalQA (Document Parsing)
 
 Quick navigation guide for coding agents working in `OB-LegalQA-Document-Parsing`.
 

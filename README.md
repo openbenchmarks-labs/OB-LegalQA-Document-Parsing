@@ -1,4 +1,4 @@
-# OB-LegalQA-Document-Parsing
+# OB-LegalQA (Document Parsing)
 
 Open, independent document processing benchmark: which document parsing APIs and frontier vision models keep tracked changes (redlines) in legal contracts intact well enough for a reader model to answer contract questions. Every tool parses the same redlined contracts, the same reader model answers the same questions from each parse, and the same judge grades every answer. Tools measured: Datalab, Extend, LlamaParse, Mistral OCR, Pulse, Reducto, Unstructured, GPT-6 Astra and Claude Fable 5.1.
 
