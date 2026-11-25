@@ -13,7 +13,7 @@ from __future__ import annotations
 from .tool_registry import TOOLS
 
 # The date the tool prices in tools/*.yaml were last checked.
-RATES_AS_OF = "2026-10-22"
+RATES_AS_OF = "2026-11-26"
 # The GPT-6 reader and judge rates were added later than the tool prices.
 LLM_RATES_AS_OF = "2026-09-29"
 
