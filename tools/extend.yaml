@@ -17,6 +17,4 @@ setups:
           - type: change_tracking
       build: "2026-10-17"
     pricing:
-      # 2 credits a page at $0.01 a credit since 2026-10-22.
-      usd_per_page: 0.02
-      usd_per_credit: 0.01
+      usd_per_page: 0.01
