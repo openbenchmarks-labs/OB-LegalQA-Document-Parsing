@@ -1,1 +1,1 @@
-"""Grades OB-LegalQA answers and builds the board."""
+"""Grades OB-LegalQA-Document-Parsing answers and builds the board."""

@@ -1,8 +1,8 @@
-# OB-Document-Parsing-LegalQA
+# OB-LegalQA (Document Parsing)
 
 Open, independent document processing benchmark: which document parsing APIs and frontier vision models keep tracked changes (redlines) in legal contracts intact well enough for a reader model to answer contract questions. Every tool parses the same redlined contracts, the same reader model answers the same questions from each parse, and the same judge grades every answer. Tools measured: Datalab, Extend, LlamaParse, Mistral OCR, Pulse, Reducto, Unstructured, GPT-6 Astra and Claude Fable 5.1.
 
-**Live leaderboard:** [openbenchmarks.com/document-processing](https://openbenchmarks.com/document-processing) · **Public dataset:** [`openbenchmarks/OB-LegalQA`](https://huggingface.co/datasets/openbenchmarks/OB-LegalQA)
+**Live leaderboard:** [openbenchmarks.com/document-processing](https://openbenchmarks.com/document-processing) · **Public dataset:** [`openbenchmarks/OB-LegalQA-Document-Parsing`](https://huggingface.co/datasets/openbenchmarks/OB-LegalQA-Document-Parsing)
 
 Published and maintained by **[OpenBenchmarks Labs](https://openbenchmarks.com)**.
 
@@ -22,7 +22,7 @@ In a redlined contract rendered to PDF, deleted clauses are only visual striketh
 
 ## Dataset
 
-No PDFs or question files are committed to this repository. Running `python -m harness.run init` downloads the 95 public questions and redlined contracts at a pinned revision from [`openbenchmarks/OB-LegalQA`](https://huggingface.co/datasets/openbenchmarks/OB-LegalQA) into `.openbench/redline-parsing/dataset/`.
+No PDFs or question files are committed to this repository. Running `python -m harness.run init` downloads the 95 public questions and redlined contracts at a pinned revision from [`openbenchmarks/OB-LegalQA-Document-Parsing`](https://huggingface.co/datasets/openbenchmarks/OB-LegalQA-Document-Parsing) into `.openbench/redline-parsing/dataset/`.
 
 See [`data/README.md`](data/README.md) for the downloaded file layout and schema.
 
@@ -62,13 +62,13 @@ uv pip install -e ".[dev,vendors]"
 ## Links
 
 - [Live leaderboard](https://openbenchmarks.com/document-processing)
-- [Hugging Face dataset](https://huggingface.co/datasets/openbenchmarks/OB-LegalQA)
+- [Hugging Face dataset](https://huggingface.co/datasets/openbenchmarks/OB-LegalQA-Document-Parsing)
 - [`llms.txt`](https://openbenchmarks.com/llms.txt)
 
 ## Related benchmarks
 
-- [OB-Inference](https://github.com/openbenchmarks-labs/OB-Inference): Serverless LLM inference latency and accuracy ([leaderboard](https://openbenchmarks.com/inference))
-- [OB-Code-Websearch](https://github.com/openbenchmarks-labs/OB-Code-Websearch): Web search APIs for coding agents ([leaderboard](https://openbenchmarks.com/web-search-for-coding-agents))
+- [OB-Inference-Microtasks](https://github.com/openbenchmarks-labs/OB-Inference-Microtasks): Serverless LLM inference latency and accuracy ([leaderboard](https://openbenchmarks.com/inference))
+- [OB-Code-WebSearch](https://github.com/openbenchmarks-labs/OB-Code-WebSearch): Web search APIs for coding agents ([leaderboard](https://openbenchmarks.com/web-search-for-coding-agents))
 - [OB-Voice-Latency](https://github.com/openbenchmarks-labs/OB-Voice-Latency): Real PSTN voice-agent latency ([leaderboard](https://openbenchmarks.com/voice-agent-latency))
 - [All OpenBenchmarks leaderboards](https://openbenchmarks.com)
 
