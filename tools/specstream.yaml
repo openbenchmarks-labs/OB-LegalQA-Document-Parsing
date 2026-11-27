@@ -1,0 +1,19 @@
+# SpecStream Extract API (https://specstream.ai/agents.md).
+# Sends each PDF inline via pages[].pdf_b64; redline deletions come back as
+# ~~struck~~ by default.
+tool: specstream
+setups:
+  specstream:
+    vendor: SpecStream
+    variant: extract (markdown)
+    tracked_changes_opt_in: false
+    bypasses_vendor_cache: false
+    settings:
+      format: markdown
+      include:
+        - full_text
+    pricing:
+      # List price: $0.80 per 1,000 documents ($0.0008 per document). The API
+      # returns price_usd in every reply, which cost_of_parse uses directly via
+      # cost_cents.
+      usd_per_page: 0.0008

@@ -16,6 +16,7 @@ from .adapters import (
     mistral,
     pulse,
     reducto,
+    specstream,
     unstructured,
 )
 
@@ -31,6 +32,7 @@ ADAPTERS: dict[str, Callable[..., tuple[str, dict]]] = {
     "mistral": mistral.parse,
     "pulse": pulse.parse,
     "reducto": reducto.parse,
+    "specstream": specstream.parse,
     "unstructured": unstructured.parse,
 }
 

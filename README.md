@@ -16,9 +16,9 @@ In a redlined contract rendered to PDF, deleted clauses are only visual striketh
 
 ## Tools evaluated
 
-9 parsing tools (11 setups) configured in [`tools/`](tools/README.md):
+10 parsing tools (12 setups) configured in [`tools/`](tools/README.md):
 
-`astra`, `datalab`, `extend`, `fable`, `llamaparse`, `mistral`, `pulse`, `reducto`, `unstructured`
+`astra`, `datalab`, `extend`, `fable`, `llamaparse`, `mistral`, `pulse`, `reducto`, `specstream`, `unstructured`
 
 ## Dataset
 
@@ -30,7 +30,7 @@ See [`data/README.md`](data/README.md) for the downloaded file layout and schema
 
 - [`data/`](data/README.md): Dataset download instructions and schema documentation (no PDFs or questions committed).
 - [`harness/`](harness/README.md): CLI runner (`init`, `smoke`, `run`, `watch`, `derive-full-run`), dataset loader, and parser adapters.
-- [`tools/`](tools/README.md): One `<tool>.yaml` config per parsing tool (9 tools, 11 setups).
+- [`tools/`](tools/README.md): One `<tool>.yaml` config per parsing tool (10 tools, 12 setups).
 - [`judge/`](judge/README.md): Answer classifier, phrase-match audit, and leaderboard report builder.
 - [`benchmark.yaml`](benchmark.yaml): Benchmark contract, scope, and refresh cadence.
 - [`AGENTS.md`](AGENTS.md): Entry guide for coding agents.
