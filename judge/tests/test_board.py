@@ -76,3 +76,30 @@ def test_board_columns_are_per_pass(tmp_path):
     assert vendor["parser_usd_per_1k_correct"] == 250.0  # $1 per pass over 4 correct
     assert vendor["tokens_per_1k_correct"] == 1_250_000  # 5,000 tokens per pass over 4 correct
     assert ranking["oracle"]["parser_usd_per_1k_correct"] is None
+
+def test_unscored_answer_cost_per_correct(tmp_path):
+    usage = {"input_tokens": 80, "output_tokens": 20}
+    rows = [
+        {"bucket": "correct", "repeat": 1, "ask": 1, "usage": usage},
+        {"bucket": "unscored", "repeat": 1, "ask": 1, "usage": usage},
+    ]
+    payload = {
+        "workflow": "redline-parsing",
+        "split": "tagged",
+        "model": "reader",
+        "dataset": {"repo": "example/data", "revision": "abc"},
+        "arms": [{
+            "arm": "vendor",
+            "vendor": "Example",
+            "repeats": 1,
+            "asks": 1,
+            "rows": rows,
+            "cost": {"vendor_usd": 10.0, "total_usd": 10.0},
+            "documents": [{"repeat": 1, "cost": {"pages": 1}}],
+        }],
+    }
+    (tmp_path / "result.json").write_text(json.dumps(payload))
+    vendor = derive(tmp_path)["ranking"][0]
+
+    assert vendor["parser_usd_per_1k_correct"] == 10_000
+    assert vendor["tokens_per_1k_correct"] == 200_000
