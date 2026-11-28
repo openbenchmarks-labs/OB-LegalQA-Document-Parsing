@@ -73,8 +73,8 @@ def derive(run_dir: Path) -> dict:
         cost = arm.get("cost") or {}
         repeats, asks = arm.get("repeats") or 1, arm.get("asks") or 1
         all_rows = arm.get("rows") or []
-        questions = len(all_rows) / (repeats * asks) if all_rows else 0
-        correct = arm_score["accuracy"] * questions
+        correct_count= sum(1 for row in all_rows if row.get("bucket") == "correct")
+        correct = correct_count / (repeats * asks)
         pages = sum((doc.get("cost") or {}).get("pages") or doc.get("n_pages") or 0
                     for doc in arm.get("documents", []) if (doc.get("repeat") or 1) == 1)
         vendor = cost.get("vendor_usd")
